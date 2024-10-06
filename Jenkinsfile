@@ -18,6 +18,8 @@ pipeline {
             steps {
                 echo 'packaging..'
                 sh 'docker build -t wepapp:test-1.0.0 -f ./WebApplication1/Dockerfile .'
+                sh 'docker login'
+                sh 'docker push wepapp:test-1.0.0 '
             }
         }
         stage('Deploy') {
