@@ -40,7 +40,7 @@ pipeline {
 
   }
   environment {
-    MY_USERNAME = 'salmastudydocker'
-    MY_PASSWORD = 'G%J)zD$NxR;Q5_!'
+    CI_MY_USERNAME = 'salmastudydocker'
+    CI_MY_PASSWORD = 'G%J)zD$NxR;Q5_!'
   }
 }
