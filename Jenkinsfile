@@ -18,8 +18,10 @@ pipeline {
             steps {
                 echo 'packaging..'
                 sh 'docker build -t wepapp:test-1.0.0 -f ./WebApplication1/Dockerfile .'
-                sh 'docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD '
-                sh 'docker push wepapp:test-1.0.0'
+                sh 'docker login'
+                sh 'echo "salmastudydocker: $DOCKER_USERNAME"'
+                sh 'echo "G%J)zD$NxR;Q5_!: $DOCKER_PASSWORD"'
+                sh ' docker push salmastudydocker/demo1:test-1.0.0'
             }
         }
         stage('Deploy') {
