@@ -20,7 +20,7 @@ pipeline {
                 sh 'docker build -t wepapp:test-1.0.0 -f ./WebApplication1/Dockerfile .'
                 sh 'docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD '
                 sh 'docker tag wepapp:test-1.0.0 $CI_REGISTRY_USER/demo1/wepapp:latest'
-                sh 'docker push $CI_REGISTRY_USER/demo1:test-1.0.0'
+                sh 'docker push $CI_REGISTRY_USER/demo1:latest'
             }
         }
         stage('Deploy') {
