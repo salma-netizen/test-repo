@@ -18,7 +18,9 @@ pipeline {
             steps {
                 echo 'packaging..'
                 sh 'docker build -t wepapp:test-1.0.0 -f ./WebApplication1/Dockerfile .'
-                sh 'docker login -u MY_USERNAME -P MY_PASSWORD'
+                sh 'echo $MY_USERNAME'
+                sh 'echo $MY_PASSWORD'
+                sh 'docker login -u $MY_USERNAME -P $MY_PASSWORD'
                 sh 'docker push wepapp:test-1.0.0'
 
             }
