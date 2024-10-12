@@ -26,8 +26,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh 'echo "$CI_GOOGLE_KEY" > google.key.json '
-                sh 'echo "$CI_REGISTRY_SECRET" > repository-docker-secret.yml'
+                sh 'echo $CI_GOOGLE_KEY > google.key.json '
+                sh 'echo $CI_REGISTRY_SECRET > repository-docker-secret.yml'
                 sh 'chmod u+x ./deploy-script.sh'
                 sh './deploy-script.sh'
                 echo 'Application successfully deployed.'
