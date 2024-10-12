@@ -34,7 +34,7 @@ pipeline {
             steps {
                 echo 'Deploying....'
                 sh 'gcloud version'
-                sh 'gcloud auth application-default login'
+                sh 'gcloud auth application-default login --quiet'
                 sh 'gcloud compute zones list'
 
                 echo 'Application successfully deployed.'
