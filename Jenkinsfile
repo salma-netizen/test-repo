@@ -34,7 +34,7 @@ pipeline {
             steps {
                 echo 'Deploying....'
                 sh 'gcloud version'
-                sh 'gcloud auth activate-service-account --key-file=$GCLOUD-CRED'
+                sh 'gcloud auth activate-service-account --key-file="$GCLOUD-CRED"'
                 sh 'gcloud compute zones list'
 
                 echo 'Application successfully deployed.'
