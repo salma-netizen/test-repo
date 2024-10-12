@@ -1,5 +1,11 @@
 pipeline {
     agent any
+    environment {
+        CLOUDSDK_CORE_PROJECT='poised-journey-438207-t9'
+        CLIENT_EMAIL='969617564573-compute@developer.gserviceaccount.com'
+
+
+    }
 
     stages {
         stage('Build') {
@@ -27,8 +33,17 @@ pipeline {
             steps {
                 echo 'Deploying....'
                 sh 'gcloud version'
+                sh 'gcloud auth activate-service-account --key-file $GCLOUD-CRED'
+                sh 'gcloud compute zones list'
+
                 echo 'Application successfully deployed.'
             }
         }
+    }
+}
+
+post {
+    always {
+        sh 'gcloud auth revoke $CLIENT_EMAIL'
     }
 }
