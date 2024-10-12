@@ -288,3 +288,6 @@ __pycache__/
 *.odx.cs
 *.xsd.cs
 
+.dockerconfigjson
+google.key.json
+repository-docker-secret.yml

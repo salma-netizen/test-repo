@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: registry.gitlab.com/devops4092828/deploy-dot-project:test-1.0.0
+        image: salmastudydocker/demo1:latest
         imagePullPolicy: Always
         ports:
             - containerPort: 8080
