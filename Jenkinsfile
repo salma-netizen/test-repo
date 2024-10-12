@@ -3,6 +3,7 @@ pipeline {
     environment {
         CLOUDSDK_CORE_PROJECT='poised-journey-438207-t9'
         CLIENT_EMAIL='969617564573-compute@developer.gserviceaccount.com'
+        GCLOUD_CRED=''
 
 
     }
@@ -33,7 +34,7 @@ pipeline {
             steps {
                 echo 'Deploying....'
                 sh 'gcloud version'
-                sh 'gcloud auth activate-service-account --key-file $GCLOUD-CRED'
+                sh 'gcloud auth activate-service-account --key-file=$GCLOUD-CRED'
                 sh 'gcloud compute zones list'
 
                 echo 'Application successfully deployed.'
