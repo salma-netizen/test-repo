@@ -287,7 +287,3 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
-
-.dockerconfigjson
-google.key.json
-repository-docker-secret.yml
