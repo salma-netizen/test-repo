@@ -39,7 +39,7 @@ pipeline {
                 sh 'gcloud container clusters get-credentials $CI_GOOGLE_CLUSTER_NAME --zone $CI_GOOGLE_CLUSTER_ZONE --project $CI_GOOGLE_PROJECT_NAME'
                 sh 'kubectl create deployment first-deployment --image=salmastudydocker/demo1:latest'
                 sh 'kubectl get deployment'
-                sh 'kubectl expose first-deployment service2 --type loadbalancer --port 8080 --target-port 80'
+                sh 'kubectl expose deployment first-deployment service2 --type loadbalancer --port 8080 --target-port 80'
 
                 echo 'Application successfully deployed.'
             }
