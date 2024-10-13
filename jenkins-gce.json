@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "poised-journey-438207-t9",
+    "private_key_id": "641a3708e9138b3f1d0da618f27f9080dd51841a",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC+0vmXRxExyepK\niW81bJ0A5EloQ1c4ve4eG8YkcxgD5cnHeA1oOIrz1VmD1Ifv7QWPn2HW/7HsVnQj\nW5oD0OivEhT2PU96BymWn3CQG6yB8veAA3LEZCf7C7GI5e1Ynk99wt9H4YSH+nm2\nROWzAQSrf7a7kOe7q6ql6GXkrkZ0ARd6JBiFbMdL9Nh+pyln95FKja44Z4qMKsar\nl8z9bu+sbdKW1qp+xYdIdbXSFDi08lNesUl2KOmd6OnJF83jxKokBrVPUYcjewC8\nARu7s9i4XieruisbS9KjexzAYJUAljHmKNwOOfwZKicB8mGvuo20LZHr1+RMgCwc\nJeJotXsBAgMBAAECggEABvTcffmshHIXgGhsHWVSzO4SYgKdQT3yGnb81tluRvGy\noZR8eQmH2twMgE9enEfGmkXsB6E4xh4GhYwPL42HKgWAx6BHdf8HjFlOinMqODuL\noi2EZ2kj6JV0ZajFXNcHaVUer1/NWJxJ1LP3lrpWOZiCKIQGFECg5WooasXsRUn9\nVMqnJ/z+nOquinFKI7COopO7CwO4uUuB5XQ9gUlMhwWwWGxNYLk+154qtGgkbhCs\n79IMnH79OLu+gZnan1ORcOUwN8LNrl8ts1cuyn5DugEC/SPt7/HI3M02T7zwDXbI\nb9KnY6Uwn87pxmWhnirBDnrMT50m91Cn3n/rS1BLZQKBgQDvvKDrFVGDcieXlyQt\nmT/l6a+hD+1YeGs2HHDDgkD8tQg9uvdutjlJ98enMp99NJjrxW1T+9SwfJ0qzZk8\nTiq2gVREqg0UBDlaS95L7yB6iMXC6ixT5Ms/2cw0CNoAUfBG5S1eTmlW2KmK+qoh\nX6v5lD0CAeVWSd582CunI9GtXQKBgQDLxOhUDlz7DRcXLVa4sLXNZ+kwBo0+MxNw\nKSxCejLZiuN17w1jheA7yW1v71kgWeXBneKadtdXkFyUoEfsq5WdliAERIdzvamG\nfoc1ejPiKtKt3tIHVlWgYaRq5QyGp+0KF9VWuZYfc93ZSn34RnWPGeKZ89+lC8DO\n8FYq9QrF9QKBgQCxOYC8SMY5peoe5lyYWPIjxN1Q87VB8cNP/TZfUas5JZsyB0Vj\nUtKHG+U8dO/yXy+tHAX2T/Srg3OscNEXA7IPuQvStuN0KKs9VVjAScZ4zyNjNDoQ\nytJ2IUwUK3b9RZWa01D2poC48vJjC2s5wMAhgLSZB03CvFj9cdDTfmdDAQKBgQCC\nbPq4MqlZF7vb3e1QMetsGkKrtsXZNiAO/ouR0V2S2M9WwTg0p5ArNHaT2wOVLXVe\nRIyyiba0GXbout7OodUWFO1RTfvVHWTQ7VPl6t4iuX44RBLzF1OfYGA4+3rVBc83\nUqH+7LMmVqd9WazfqVm9yre8Ctjvb2JuEm9U95t5sQKBgG0rXglDnb9uPBLPZQh0\nWtO/i4zKjiBnBkpVVnmORt4qKgGDAkdOiBA/bK3oYSsG1IdTIOcISUuKUd+QpkwG\nCD9Kr5TdFHg4hkRn+uZPrrAIjgPaD8jfooU/kPY+z/fFWtTm/FQ5KvogN1OCrfs9\nguPHPFBWND55bmRnfI7K4M2h\n-----END PRIVATE KEY-----\n",
+    "client_email": "gcp-jenkins-dep@poised-journey-438207-t9.iam.gserviceaccount.com",
+    "client_id": "105957726256902728608",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gcp-jenkins-dep%40poised-journey-438207-t9.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
