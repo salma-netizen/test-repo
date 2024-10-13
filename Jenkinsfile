@@ -35,7 +35,6 @@ pipeline {
                 echo 'Deploying....'
                 sh 'gcloud version'
                 sh 'gcloud compute zones list'
-                sh 'gcloud auth activate-service-account --key-file jenkins-gce.json'
                 sh 'gcloud config set container/use_client_certificate False'
                 sh 'gcloud container clusters get-credentials $CI_GOOGLE_CLUSTER_NAME --zone $CI_GOOGLE_CLUSTER_ZONE --project $CI_GOOGLE_PROJECT_NAME'
 
