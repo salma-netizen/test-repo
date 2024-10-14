@@ -37,7 +37,7 @@ pipeline {
                 sh 'gcloud compute zones list'
                 sh 'gcloud config set container/use_client_certificate False'
                 sh 'gcloud container clusters get-credentials $CI_GOOGLE_CLUSTER_NAME --zone $CI_GOOGLE_CLUSTER_ZONE --project $CI_GOOGLE_PROJECT_NAME'
-                sh 'kubectl apply deployment first-deployment --image=salmastudydocker/demo1:latest'
+                sh 'kubectl apply -f deployment.yml'
                 sh 'kubectl get deployment'
                 sh 'kubectl expose deployment first-deployment  --type LoadBalancer --port 8080 --target-port 8080'
 
