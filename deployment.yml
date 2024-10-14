@@ -1,30 +1,37 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: first-deployment
+  name: nginx-deployment
+  labels:
+    app: nginx
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
-      app: my-app
+      app: nginx
   template:
     metadata:
       labels:
-        app: my-app
+        app: nginx
     spec:
       containers:
-        - name: my-container
-          image: salmastudydocker/demo1:latest
+      - name: nginx
+        image: salmastudydocker/demo1:latest
+        imagePullPolicy: Always
+        ports:
+            - containerPort: 8080
 
+        
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: first-deployment
+  name: my-service
 spec:
   type: LoadBalancer
+  selector:
+    app: nginx
   ports:
     - protocol: TCP
-      port: 8080
-      targetPort: 8080
-
+      port: 80
+      targetPort: 80
