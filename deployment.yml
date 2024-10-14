@@ -17,6 +17,7 @@ spec:
       containers:
         - name: nginx
           image: salmastudydocker/demo1:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
       imagePullSecrets:
