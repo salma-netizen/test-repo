@@ -37,8 +37,8 @@ pipeline {
                 sh 'gcloud compute zones list'
                 sh 'gcloud config set container/use_client_certificate False'
                 sh 'gcloud container clusters get-credentials $CI_GOOGLE_CLUSTER_NAME --zone $CI_GOOGLE_CLUSTER_ZONE --project $CI_GOOGLE_PROJECT_NAME'
-                sh 'echo "$CI_REGISTRY_SECRET" > registry-dockerhub-secret.yml '
-                sh 'kubectl apply -f registry-dockerhub-secret.yml'     
+                sh 'echo "$CI_REGISTRY_SECRET" > registry-dockerhub-secret.json '
+                sh 'kubectl apply -f registry-dockerhub-secret.json'     
                 sh 'kubectl apply -f deployment.yml'
                 echo 'Application successfully deployed.'
             }
