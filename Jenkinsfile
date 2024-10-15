@@ -40,7 +40,7 @@ pipeline {
                 sh 'echo "$CI_REGISTRY_SECRET" > registry-dockerhub-secret.json '
                 sh 'kubectl apply -f ./registry-dockerhub-secret.json'     
                 sh 'kubectl apply -f ./deployment.yml'
-                sh 'kubectl expose deployment --type LoadBalancer port 8080 target-port 8080'
+                sh 'kubectl expose nginx-deployment --type LoadBalancer port 8080 target-port 8080'
                 echo 'Application successfully deployed.'
             }
         }
