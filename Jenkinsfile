@@ -9,16 +9,6 @@ pipeline {
     }
 
     stages {
-        stage('ansible') {
-            steps {
-                echo 'using ansible..'
-                sh 'export PATH=$PATH:/usr/bin/ansible'
-                sh 'echo "$CI_PRIVATE_KEY" >> gcp'
-                sh 'echo "$CI_PUBLIC_KEY" >> gcp_pub'
-                sh 'chmod 600 ./ansible-config/gcp'
-                sh 'ansible-playbook -i ./ansible-config/hosts.ini ./ansible-config/my_playbook.yml -vvv'
-            
-        }
 
         stage('Build') {
             steps {
