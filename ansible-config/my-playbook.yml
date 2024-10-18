@@ -1,0 +1,10 @@
+---    
+    - hosts: all
+      become: yes
+      tasks:
+       - name: update apt cache
+         apt:
+           update_cache: yes
+       - name: nano install
+         apt: name=nano state=present
+       

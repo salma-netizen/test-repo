@@ -9,6 +9,13 @@ pipeline {
     }
 
     stages {
+                stage('ansible') {
+            steps {
+                echo 'Building..'
+                sh 'cd ansible-config'
+                sh 'ansible-playbook -i hosts.init my-playbook.yml'
+            }
+        }
         stage('Build') {
             steps {
                 echo 'Building..'

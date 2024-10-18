@@ -1,0 +1,5 @@
+[all:vars]
+ansible_ssh_common_args = '-o StrictHostKeyChecking=no'
+
+[servers]
+jenkins-instance ansible_host=34.72.89.213 ansible_user=salma ansible_ssh_private_key_file=./gcp
