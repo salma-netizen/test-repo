@@ -13,8 +13,7 @@ pipeline {
             steps {
                 echo 'using ansible..'
                 sh 'export PATH=$PATH:/usr/bin/ansible'
-                sh 'cd ansible-config'
-                sh 'ansible-playbook -i hosts.init my_playbook.yml -vvv'
+                sh 'ansible-playbook -i hosts.init ./ansible-config/my_playbook.yml -vvv'
             }
         }
 
