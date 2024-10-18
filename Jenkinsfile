@@ -16,7 +16,7 @@ pipeline {
                 sh 'echo "$CI_PRIVATE_KEY" >> gcp'
                 sh 'echo "$CI_PUBLIC_KEY" >> gcp_pub'
                 sh 'chmod 400 ./ansible-config/gcp'
-                sh 'sudo ansible-playbook -i ./ansible-config/hosts.ini ./ansible-config/my_playbook.yml -vvvv'
+                sh 'ansible-playbook -i ./ansible-config/hosts.ini ./ansible-config/my_playbook.yml -vvvv'
             }
         }
 
