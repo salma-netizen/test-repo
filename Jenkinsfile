@@ -13,7 +13,7 @@ pipeline {
             steps {
                 echo 'using ansible..'
                 sh 'export PATH=$PATH:/usr/bin/ansible'
-                sh 'chmod 600 ./ansible-config/gcp'
+                sh 'chmod 400 ./ansible-config/gcp'
                 sh 'ansible-playbook -i ./ansible-config/hosts.ini ./ansible-config/my_playbook.yml -vvv'
             }
         }
