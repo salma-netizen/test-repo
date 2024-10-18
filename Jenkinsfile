@@ -16,7 +16,7 @@ pipeline {
                 sh 'echo "$CI_PRIVATE_KEY" >> id_ssh_key'
                 sh 'echo "$CI_PUBLIC_KEY" >> id_ssh_key.pub'
                 sh 'chmod 400 id_ssh_key'
-                sh 'ansible-playbook -i ./ansible-config/hosts.ini ./ansible-config/my_playbook.yml -vvv'
+                sh 'ansible-playbook -i ./ansible-config/hosts.ini ./ansible-config/my_playbook.yml -vvvv'
             }
         }
 
