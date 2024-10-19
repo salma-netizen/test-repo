@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: dotnet-deployment
   labels:
-    app: nginx
+    app: dotnet
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: dotnet
   template:
     metadata:
       labels:
-        app: nginx
+        app: dotnet
     spec:
       containers:
-        - name: nginx
+        - name: dotnet
           image: salmastudydocker/demo1:latest
           imagePullPolicy: Always
           ports:

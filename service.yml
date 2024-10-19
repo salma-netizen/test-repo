@@ -6,7 +6,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    app: nginx
+    app: dotnet
   ports:
     - protocol: TCP
       port: 8080
