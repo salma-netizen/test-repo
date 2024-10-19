@@ -1,12 +1,5 @@
 pipeline {
     agent any
-    environment {
-        CLOUDSDK_CORE_PROJECT='poised-journey-438207-t9'
-        CLIENT_EMAIL='969617564573-compute@developer.gserviceaccount.com'
-        GCLOUD_CRED=''
-
-
-    }
 
     stages {
 
