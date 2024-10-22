@@ -35,7 +35,7 @@ pipeline {
                 sh 'kubectl apply -f ./registry-dockerhub-secret.json'     
                 sh 'kubectl apply -f ./deployment.yml'
                 sh 'kubectl apply -f ./service.yml'
-                echo 'Application successfully deployed.'
+                echo 'Application successfully deployed. '
             }
         }
     }
